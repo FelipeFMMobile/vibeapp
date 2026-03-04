@@ -37,8 +37,3 @@ Aplicativo iOS construído em SwiftUI com organização em MVVM para evolução 
 - `VibeApp/AvailabilityScreenViewModel.swift`
 - `VibeApp/VibeAppApp.swift`
 
-## Próximos passos recomendados
-
-- Criar testes unitários para todas as funções do `AvailabilityScreenViewModel`.
-- Conectar ações de navegação (`Back`/`Next`) a um coordenador/roteador.
-- Evoluir a integração com Figma com mapeamento de componentes reutilizáveis.
