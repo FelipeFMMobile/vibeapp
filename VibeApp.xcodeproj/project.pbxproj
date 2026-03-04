@@ -6,15 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BCF05C1A2F57B33300D27DCD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BCF05C192F57B33300D27DCD /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10100092F60000100D27DCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF05BF52F57010200D27DCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF05BFC2F57010200D27DCD;
+			remoteInfo = VibeApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3E7D6C0C2FF5B5D000A1B2C3 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		BCF05BFD2F57010200D27DCD /* VibeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10100012F60000100D27DCD /* VibeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF05C192F57B33300D27DCD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BCF05BFF2F57010200D27DCD /* VibeApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VibeApp;
+			sourceTree = "<group>";
+		};
+		C10100022F60000100D27DCD /* VibeAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VibeAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -27,14 +48,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C10100052F60000100D27DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BCF05BF42F57010200D27DCD = {
 			isa = PBXGroup;
 			children = (
+				BCF05C192F57B33300D27DCD /* README.md */,
 				3E7D6C0C2FF5B5D000A1B2C3 /* AGENTS.md */,
 				BCF05BFF2F57010200D27DCD /* VibeApp */,
+				C10100022F60000100D27DCD /* VibeAppTests */,
 				BCF05BFE2F57010200D27DCD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF05BFD2F57010200D27DCD /* VibeApp.app */,
+				C10100012F60000100D27DCD /* VibeAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +103,29 @@
 			productReference = BCF05BFD2F57010200D27DCD /* VibeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C10100032F60000100D27DCD /* VibeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C101000E2F60000100D27DCD /* Build configuration list for PBXNativeTarget "VibeAppTests" */;
+			buildPhases = (
+				C10100042F60000100D27DCD /* Sources */,
+				C10100052F60000100D27DCD /* Frameworks */,
+				C10100062F60000100D27DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C101000B2F60000100D27DCD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C10100022F60000100D27DCD /* VibeAppTests */,
+			);
+			name = VibeAppTests;
+			packageProductDependencies = (
+			);
+			productName = VibeAppTests;
+			productReference = C10100012F60000100D27DCD /* VibeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -84,6 +138,10 @@
 				TargetAttributes = {
 					BCF05BFC2F57010200D27DCD = {
 						CreatedOnToolsVersion = 26.3;
+					};
+					C10100032F60000100D27DCD = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = BCF05BFC2F57010200D27DCD;
 					};
 				};
 			};
@@ -102,12 +160,21 @@
 			projectRoot = "";
 			targets = (
 				BCF05BFC2F57010200D27DCD /* VibeApp */,
+				C10100032F60000100D27DCD /* VibeAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BCF05BFB2F57010200D27DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF05C1A2F57B33300D27DCD /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10100062F60000100D27DCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -124,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C10100042F60000100D27DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C101000B2F60000100D27DCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCF05BFC2F57010200D27DCD /* VibeApp */;
+			targetProxy = C10100092F60000100D27DCD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BCF05C062F57010300D27DCD /* Debug */ = {
@@ -312,6 +394,56 @@
 			};
 			name = Release;
 		};
+		C101000C2F60000100D27DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YZYY9PGW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fmmobile.VibeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VibeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VibeApp";
+			};
+			name = Debug;
+		};
+		C101000D2F60000100D27DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9YZYY9PGW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.fmmobile.VibeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VibeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VibeApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +461,15 @@
 			buildConfigurations = (
 				BCF05C092F57010300D27DCD /* Debug */,
 				BCF05C0A2F57010300D27DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C101000E2F60000100D27DCD /* Build configuration list for PBXNativeTarget "VibeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C101000C2F60000100D27DCD /* Debug */,
+				C101000D2F60000100D27DCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
